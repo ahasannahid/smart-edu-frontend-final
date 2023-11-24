@@ -14,8 +14,8 @@ const TeacherAside = () => {
 
 
 
-            <h6 className="text-primary mt-4"><i className="fa fa-clone me-2" aria-hidden="true"></i><Link
-                className="text-decoration-none text-dark" to="/teacherQA">প্রশ্ন ও উত্তর</Link></h6>
+            {/* <h6 className="text-primary mt-4"><i className="fa fa-clone me-2" aria-hidden="true"></i><Link
+                className="text-decoration-none text-dark" to="/teacherQA">প্রশ্ন ও উত্তর</Link></h6> */}
 
             <h6 className="text-primary mt-4"><i className="fa fa-clone me-2" aria-hidden="true"></i><Link
                 className="text-decoration-none text-dark" to="/teacherResources">রিসোর্স</Link></h6>

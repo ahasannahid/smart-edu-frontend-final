@@ -6,7 +6,7 @@ import Login from "../Shared/Login";
 import Contact from "../Shared/Contact";
 import TeacherDashBoard from './../Pages/Teacher/TeacherDashBoard';
 import StudentDashBoard from "../Pages/Student/StudentDashBoard";
-import Repository from './../Pages/Student/Repository';
+// import Repository from './../Pages/Student/Repository';
 import Resource from './../Pages/Student/Resource';
 import Chapter from "../Pages/Student/Chapter";
 import LeaderBoard from "../Shared/LeaderBoard";
@@ -27,6 +27,10 @@ import PostActivity from "../Pages/Teacher/PostActivity";
 import Amarjiggasa from "../Pages/Teacher/Amarjiggasa";
 import UpdateAmarJiggasa from "../Pages/Teacher/UpdateAmarJiggasa";
 import SubmitAnswer from "../Pages/Teacher/SubmitAnswer";
+import RelatedContent from "../Shared/RelatedContent";
+import RelatedContentNews from "../Shared/RelatedContentNes";
+import StudentRelatedContent from "../Shared/StudentRelatedContent";
+import StudentRelatedContentNews from "../Shared/StudentRelatedContentNews";
 
 
 
@@ -56,10 +60,10 @@ const router = createBrowserRouter([
                 path: '/chapter',
                 element: <Chapter></Chapter>
             },
-            {
-                path: '/repo',
-                element: <Repository></Repository>
-            },
+            // {
+            //     path: '/question',
+            //     element: <Repository></Repository>
+            // },
             {
                 path: '/resources',
                 element: <Resource></Resource>
@@ -168,7 +172,27 @@ const router = createBrowserRouter([
                 element: <SubmitAnswer></SubmitAnswer>,
                 loader: ({params}) => fetch(`http://localhost:5000/activities/${params.id}`)
             },
-        
+            {
+                path: '/relatedContact',
+                element: <RelatedContent></RelatedContent>,
+                
+            },
+            {
+                path: '/relatedContactnews',
+                element: <RelatedContentNews></RelatedContentNews>,
+                
+            },
+
+            {
+                path: '/studentrelatedContact',
+                element: <StudentRelatedContent></StudentRelatedContent>,
+                
+            },
+            {
+                path: '/studentrelatedContactnews',
+                element: <StudentRelatedContentNews></StudentRelatedContentNews>,
+                
+            },
            
         
         ]

@@ -19,12 +19,13 @@ const Resource = () => {
 
     return (
         <section className="container mt-5">
+            <h1 className='text-primary text-center mb-3'>রিসোর্স</h1>
             <div className="row ">
                 <StudentAside></StudentAside>
 
 
                 <div className="col-sm-6 col-md-8">
-                    <h3 className="text-center text-dark mb-2">রিসোর্স</h3>
+                    
                     <div className="text-center mb-5 row row-cols-1 row-cols-md-3">
                         <select name="topic" id="topic" className="p-3 ms-3">
                             <option value="">জাহানারা ইমাম</option>

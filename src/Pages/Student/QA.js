@@ -17,6 +17,7 @@ const QA = () => {
 
     return (
         <section className="container mt-5">
+            <h1 className='text-primary text-center mb-3'>প্রশ্ন ও উত্তর</h1>
             <div className="row ">
                 <div className="col-sm-6 col-md-4 border rounded">
                     <ClassContentAside></ClassContentAside>
@@ -27,7 +28,7 @@ const QA = () => {
 
 
                     <section className="container mt-2">
-                        <h2 className="text-center text-info mb-3">প্রশ্ন ও উত্তর</h2>
+                   
 
                         <div>
                             {

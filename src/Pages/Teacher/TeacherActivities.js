@@ -1,6 +1,6 @@
 import React from 'react';
 import jahanara from './img/jahanaraImam.jpg'
-import m1971 from './img/1971.jpg'
+// import m1971 from './img/1971.jpg'
 import { useQuery } from '@tanstack/react-query';
 
 import ChatBot from '../../Shared/Popup';
@@ -21,6 +21,7 @@ const TeacherActivities = () => {
 
     return (
         <section className="container mt-5">
+            <h1 className="text-center text-primary mb-3">একটিভিটিস</h1>
             <div className="row ">
                 <div className="col-sm-6 col-md-4 border rounded">
                     <div className=" mb-3" >
@@ -67,14 +68,14 @@ const TeacherActivities = () => {
                                     <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                                         কাজগুলো দেখুন
                                     </button>
-                                    <ul className="dropdown-menu bg-primary">
+                                    {/* <ul className="dropdown-menu bg-primary">
                                         <li><a className="dropdown-item" href="#">প্রশ্ন ও উত্তর</a></li>
                                         <li><a className="dropdown-item" href="#">শব্দার্থ</a></li>
                                         <li><a className="dropdown-item" href="#">প্রবন্ধ/অনুচ্ছেদ</a></li>
                                         <li><a className="dropdown-item" href="#">সমার্থক শব্দ</a></li>
                                         <li><a className="dropdown-item" href="#">আরো দেখুন...</a></li>
 
-                                    </ul>
+                                    </ul> */}
                                 </div>
                             </div>
                         </div>
@@ -97,12 +98,12 @@ const TeacherActivities = () => {
                                         data-bs-toggle="dropdown">
                                         কাজগুলো দেখুন
                                     </button>
-                                    <ul className="dropdown-menu bg-primary">
+                                    {/* <ul className="dropdown-menu bg-primary">
                                         <li><a className="dropdown-item" href="#">প্রশ্ন প্রণয়ন</a></li>
                                         <li><a className="dropdown-item" href="#">ডায়াগ্রামিং</a></li>
                                         <li><a className="dropdown-item" href="#">উপস্থাপনা</a></li>
                                         <li><a className="dropdown-item" href="#">আরো দেখুন...</a></li>
-                                    </ul>
+                                    </ul> */}
                                 </div>
                             </div>
                         </div>
@@ -111,7 +112,7 @@ const TeacherActivities = () => {
                     <section className="container mt-5">
 
 
-                    {
+                        {
                             activities.map(activity => <SingleteacherActivity
                                 key={activity._id}
                                 activity={activity}
@@ -120,7 +121,7 @@ const TeacherActivities = () => {
                             ></SingleteacherActivity>)
                         }
 
-                        
+
 
                     </section>
 

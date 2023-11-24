@@ -15,7 +15,7 @@ const StudentAside = () => {
 
 
             <h6 className="text-primary mt-4"><i className="fa fa-clone me-2" aria-hidden="true"></i><Link
-                className="text-decoration-none text-dark" to="/repo">রিপোজিটরি</Link></h6>
+                className="text-decoration-none text-dark" to="/repo">আমার জিজ্ঞাসা</Link></h6>
 
             <h6 className="text-primary mt-4"><i className="fa fa-clone me-2" aria-hidden="true"></i><Link
                 className="text-decoration-none text-dark" to="/resources">রিসোর্স</Link></h6>

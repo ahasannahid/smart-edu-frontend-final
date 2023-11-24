@@ -59,7 +59,7 @@ const UpdateQA = () => {
 
 
                     <div className='mt-4 text-center'>
-                        <h1 className='mb-3'>উত্তর আপডেট করুন</h1>
+                        <h1 className='mb-3 text-primary'>উত্তর আপডেট করুন</h1>
 
                         <h6>প্রশ্ন : {question}</h6>
 

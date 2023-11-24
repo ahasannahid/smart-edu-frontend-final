@@ -6,6 +6,7 @@ import { useQuery } from '@tanstack/react-query';
 import TeacherClassContentAside from '../../components/TeacherClassContentAside';
 import ChatBot from '../../Shared/Popup';
 import SingleJiggasa from './SingleJiggasa';
+// import TeacherQA from './TeacherQA';
 
 
 const Amarjiggasa = () => {
@@ -22,8 +23,9 @@ const Amarjiggasa = () => {
 
     return (
         <section className="container mt-5">
+            <h1 className="text-center text-primary mb-3">আমার জিজ্ঞাসা</h1>
             <div className="row">
-                <div class=" mb-3">
+                <div class="mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <TeacherClassContentAside></TeacherClassContentAside>
@@ -40,16 +42,13 @@ const Amarjiggasa = () => {
                                 }
 
                             </div>
+                            
                         </div>
                     </div>
-                </div>
-
-
-
-
-
-
+                </div>               
             </div>
+            {/* <TeacherQA></TeacherQA> */}
+            
             <ChatBot></ChatBot>
         </section>
 

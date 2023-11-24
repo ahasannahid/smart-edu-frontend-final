@@ -1,12 +1,17 @@
 import React from 'react';
 import jahanara from './img/jahanaraImam.jpg';
-import video from './img/manipulate text background.mp4'
+import video from './img/bangla.webp'
 import ClassContentAside from '../../components/ClassContentAside';
 import ChatBot from '../../Shared/Popup';
+import { Link } from 'react-router-dom';
+import letter from "./img/letter.jpg"
+import lwm from "./img/lwm.jpg"
+import news from "./img/newspaper.jpg"
 
 const ClassContent = () => {
     return (
         <section className="container mt-5">
+            <h1 className='text-primary text-center mb-3'>ক্লাস উপকরণ</h1>
             <div className="row">
                 <div className="col-sm-12 col-md-4 ">
                     <div className=" mb-3">
@@ -16,7 +21,7 @@ const ClassContent = () => {
 
                                 <div className="col-md-6">
                                     <img src={jahanara}
-                                        className="img-fluid mt-5 img-jahanaraImam w-100 rounded-4" alt="..."/>
+                                        className="img-fluid mt-5 img-jahanaraImam w-100 rounded-4" alt="..." />
                                 </div>
                             </div>
 
@@ -28,7 +33,7 @@ const ClassContent = () => {
                     <div className="">
                         <div className="">
                             <video width="700px" height="240" controls>
-                                <source src={video} type="video/mp4"/>
+                                <source src={video} type="video/mp4" />
                             </video>
 
 
@@ -46,6 +51,41 @@ const ClassContent = () => {
                             <button className="btn btn-outline-info">একাত্তরের দিনগুলি </button>
                         </div>
                     </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                        <div class="col">
+                            <div class="card">
+                                <img src={letter} class="card-img-top related-img" alt="..." />
+                                <div class="card-body">
+                                    <p class="card-text">জাহানারা ইমাম এর চিঠি
+                                    </p>
+                                    <Link to="/studentrelatedContact" className="btn btn-info ms-2">বিস্তারিত</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src={news} class="card-img-top related-img" alt="..." />
+                                <div class="card-body">
+                                    <p class="card-text">৩টি শত্রু ব্যাটেলিয়ান নিশ্চিহ্ন
+                                    </p>
+                                    <Link to="/studentrelatedContactnews" className="btn btn-info ms-2">বিস্তারিত</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div className="card">
+                                <img src={lwm} className="card-img-top related-img" alt="..." />
+                                <div class="card-body">
+                                    <p class="card-text">Virtual Liberation War Museum </p>
+                                    <a href="https://www.liberationwarmuseumbd.org/#Virtual-Tour" target='blank' className="btn btn-info ms-2">VISIT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
             <ChatBot></ChatBot>

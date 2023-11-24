@@ -1,7 +1,5 @@
 import React from 'react';
-import TeacherAside from '../../components/TeacherAside';
-
-import ChatBot from '../../Shared/Popup';
+// import TeacherAside from '../../components/TeacherAside';
 import { useQuery } from '@tanstack/react-query';
 import TeacherSingleQA from './teacherSingleQA';
 
@@ -18,17 +16,18 @@ const TeacherQA = () => {
 
     return (
         <section className="container mt-5">
-            <div className="row ">
-                <div className="col-sm-6 col-md-4 border rounded">
-                    <TeacherAside></TeacherAside>
+            <h1 className="text-center text-primary mb-3">প্রশ্ন ও উত্তর</h1>
+            <div className="row">
+                <div className="col-sm-6 col-md-3">
+                    {/* <TeacherAside></TeacherAside> */}
                 </div>
 
 
-                <div className="col-sm-6 col-md-8">
+                <div className="col-sm-6 col-md-9 ">
 
 
-                    <section className="container mt-2">
-                        <h2 className="text-center text-info mb-3">প্রশ্ন ও উত্তর</h2>
+                    <section className="container mt-2 ms-5">
+                        
 
                         <div>
                             {
@@ -46,7 +45,7 @@ const TeacherQA = () => {
 
                 </div>
             </div>
-            <ChatBot></ChatBot>
+            
         </section>
     );
 };

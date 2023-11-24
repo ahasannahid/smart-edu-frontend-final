@@ -10,6 +10,7 @@ import ChatBot from '../../Shared/Popup';
 const TeacherDashBoard = () => {
     return (
         <section className="container mt-5">
+             <h1 className='text-primary text-center mb-3'>শিক্ষক ড্যাশবোর্ড</h1>
             <div className="row ">
                <TeacherAside></TeacherAside>
 

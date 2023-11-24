@@ -4,11 +4,15 @@ import ChatBot from '../../Shared/Popup';
 
 const TeacherTrainning = () => {
     return (
-        <div className='row container'>
-            <TeacherAside></TeacherAside>
-            <h1>Teacher Training</h1>
-            <ChatBot></ChatBot>
+        <div className='container'>
+            <div className='row '>
+                <h1 className="text-center text-primary mt-5">TEACHER TRAINING</h1>
+                <TeacherAside></TeacherAside>
+
+                <ChatBot></ChatBot>
+            </div>
         </div>
+
     );
 };
 

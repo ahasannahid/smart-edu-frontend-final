@@ -56,7 +56,7 @@ const UpdateNumber = () => {
 
 
                     <div className='mt-4 '>
-                        <h1 className='mb-3'> নাম্বার আপডেট ও মন্তব্য করুন</h1>
+                        <h1 className='mb-3 text-primary'> নাম্বার আপডেট ও মন্তব্য করুন</h1>
 
                         <h6>প্রশ্ন : {question}</h6>
 

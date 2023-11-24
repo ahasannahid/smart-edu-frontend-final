@@ -2,10 +2,12 @@ import React from 'react';
 import ClassContentAside from '../../components/ClassContentAside';
 import jahanara from './img/jahanaraImam.jpg'
 import ChatBot from '../../Shared/Popup';
+import Repository from './Repository';
 
 const Question = () => {
     return (
         <section className="container mt-5">
+            <h1 className='text-primary text-center mb-3'>আমার জিজ্ঞাসা</h1>
             <div className="row">
                 <div className="col-sm-12 col-md-4 ">
                     <div className=" mb-3">
@@ -36,6 +38,7 @@ const Question = () => {
                         <button className="btn btn-outline-primary">সাবমিট</button>
                 </div>
             </div>
+            <Repository></Repository>
             <ChatBot></ChatBot>
         </section>
     );

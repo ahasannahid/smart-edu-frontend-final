@@ -22,10 +22,10 @@ const ClassContentAside = () => {
                     একটিভিটিস</Link>
                 </li>
 
-                <li className="py-2"><i className="fa fa-caret-right" aria-hidden="true"></i> <Link
+                {/* <li className="py-2"><i className="fa fa-caret-right" aria-hidden="true"></i> <Link
                     className="text-decoration-none text-dark" to="/qa">
                     প্রশ্ন ও উত্তর</Link>
-                </li>
+                </li> */}
 
 
                 <li className="py-2"><i className="fa fa-caret-right" aria-hidden="true"></i> <Link

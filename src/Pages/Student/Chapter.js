@@ -24,6 +24,7 @@ const Chapter = () => {
 
     return (
         <section className="container mt-5">
+            <h1 className='text-primary text-center mb-3'>অধ্যায়</h1>
             <div className="row ">
                 <StudentAside></StudentAside>
 

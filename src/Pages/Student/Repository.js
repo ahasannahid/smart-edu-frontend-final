@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import StudentAside from '../../components/studentAside';
+// import StudentAside from '../../components/studentAside';
 import SingleRepo from './singleRepo';
 import ChatBot from '../../Shared/Popup';
 
@@ -18,12 +18,13 @@ const Repository = () => {
 
     return (
         <section className="container mt-5">
+            <h1 className='text-primary text-center mb-3'>প্রশ্ন ও উত্তর</h1>
             <div className="row ">
-                <StudentAside></StudentAside>
+                {/* <StudentAside></StudentAside> */}
 
 
-                <div className="col-sm-6 col-md-8">
-                    <h3 className="text-center text-dark mb-2">রিপোজিটরি</h3>
+                <div className="col">
+                    
                     <div className="text-center mb-5 row row-cols-1 row-cols-md-3">
                         <select name="topic" id="topic" className="p-3 ms-3">
                             <option value="">জাহানারা ইমাম</option>
@@ -33,7 +34,7 @@ const Repository = () => {
                         </select>
                     </div>
 
-                    <div className=" shadow-lg rounded-3 p-3">
+                    <div className=" rounded-3 p-3 mx-auto">
                         {
                             repositories.map(repository => <SingleRepo
                                 key={repository._id}
